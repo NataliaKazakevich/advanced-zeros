@@ -1,5 +1,5 @@
 module.exports = function getZerosCount(number, base) {
- 
+
   let degreeOf = 0;
   let zeros = 0;
 
