@@ -1,6 +1,6 @@
 module.exports = function getZerosCount(number, base) {
 
-  let degreeOf = 0;
+  let power = 0;
   let zeros = 0;
 
   let maxPrimeNumber =  (base) => {
@@ -9,10 +9,10 @@ module.exports = function getZerosCount(number, base) {
     while (true) {
       if (base % numberMultiplier === 0) {
         base = base/numberMultiplier;
-        degreeOf++;
+        power++;
       } else {
         numberMultiplier++;
-        degreeOf = 0;
+        power = 0;
       }
 
       if (base === 1) return numberMultiplier;
